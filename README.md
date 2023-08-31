@@ -1,21 +1,59 @@
-DATA CHALLENGE
-Bem vindos ao primeiro DATA CHALLENGE!
+# DATA CHALLENGE 2
+
+---
+
+Bem vindos ao segundo DATA CHALLENGE!
 
 Aqui traremos alguns problemas que envolvam python, dados, aprendizado de máquina e afins. O intuito é que vocês tentem ao máximo praticar com esses desafios que trarão por ventura, alguns tópicos interessantes.
 
-CHALLENGE: Funções
-Um dia extra é adicionado ao calendário quase a cada quatro anos como 29 de fevereiro, e o dia é chamado de dia bissexto . Ele corrige o calendário pelo fato de que nosso planeta leva aproximadamente 365,25 dias para orbitar o sol. Um ano bissexto contém um dia bissexto.
+#CHALLENGE: Funções e Listas
 
-No calendário gregoriano, três condições são usadas para identificar anos bissextos:
+Peter é um jovem rapaz de 10 anos que adora comer doces. Ele costuma guardar esses doces variados em uma mochila.
 
-O ano que pode ser dividido por 4, é um ano bissexto, a menos que:
-O ano pode ser dividido por 100, então NÃO é um ano bissexto, a menos que:
-O ano também é divisível por 400. Então é um ano bissexto.
-Fonte: https://www.timeanddate.com/date/leapyear.html
+Podemos representar a mochila de Peter como uma lista da seguinte forma:
 
-Isso significa que no calendário gregoriano, os anos 2000 e 2400 são bissextos, enquanto 1800, 1900, 2100, 2200, 2300 e 2500 NÃO são anos bissextos.
+`doces = [1,1,2,3,4,5,5,5] `
 
-Tarefa
-Dado um ano, determine se é um ano bissexto. Se for um ano bissexto, retorne o True, caso contrário, retorne False.
+Nesse caso, a mochila de Peter contém 8 doces, sendo 2 do tipo `1`, 1 do tipo `2`, 1 do tipo `3`, 1 do tipo `4` e 3 do tipo `5`.
 
-Observe que o stub de código fornecido lê a entrada e passa argumentos para a função is_leap. Só é necessário completar a função is_leap.
+Segundo médico de Peter, ele deve reduzir seu consumo de doces pela metade. E como Peter é esperto, ele quer consumir a maior variedade de doces possível seguindo a orientação do Médico.
+
+Ex:
+
+- Se a mochila dele tiver 8 doces da seguinte forma : `doces = [1,1,2,3,4,5,5,5] ` - Peter consumirá no máximo 4 variedades.
+
+- Se a mochila dele tiver 4 doces da seguinte forma : `doces = [1,1,2,3]` - Peter consumirá no máximo 2 variedades.
+
+- Se a mochila dele tiver 8 doces da seguinte forma : `doces = [1,1,2,3,2,1,3,2]` - Peter consumirá no máximo 3 variedades.
+
+...
+
+Obs: Vamos supor que sempre haja uma quantidade `par` de doces na mochila.
+
+
+
+
+## Tarefa
+
+Construa uma lógica para a função `DocesPeter()` onde ela receba como parâmetro uma `lista` contendo os doces e seus tipos, e devolva o valor da quantidade máxima de doces que Peter pode consumir (a função deve devolver um `int`).
+
+Não se assuste caso você não esteja acostumado a ver a função assim:
+
+```python
+
+def DocesPeter(lista_tipos_doces) -> int:
+
+```
+
+Isso só significa que a função vai receber como parâmetro essa `lista_tipos_doces` e devolverá um número do tipo `int`.
+
+Aqui a ideia é deixar a criatividade fluir.
+
+É um tipo de problema que não tem 1 tipo de solução, mas lembre que no primeiro CHALLENGE havia uma solução que torna mais legível e simples o código.
+
+Não ligue para o tempo que vai levar, apenas se concentre em achar uma solução e verificar suas heurísticas(lógica).
+
+Esse é um problema que não precisa de nenhuma biblioteca pronta! Basta colocar a criatividade pra jogo.
+
+
+
